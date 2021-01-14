@@ -1,13 +1,33 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Cousine&family=Fira+Mono&display=swap');
+
+* {
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Fira Mono', monospace;
+  --primaryBackgroundColor: #DBFCFF;
+  --primaryTextColor: #1F2041;
+  --additionalTextColor: #857E61;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@media (prefers-color-scheme: dark) {
+  html {
+    --primaryBackgroundColor: #1f2041;
+    --primaryTextColor: #dbfcff;
+  }   
 }
+
+body {
+  background-color: var(--primaryBackgroundColor);
+  color: var(--primaryTextColor);
+}
+
+.btn-outline-secondary {
+  border-color: var(--additionalTextColor);
+  color: var(--additionalTextColor);
+}
+
+.form-control {
+  border-color: var(--additionalTextColor);
+  color: var(--additionalTextColor);
+}
+

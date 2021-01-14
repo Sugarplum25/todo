@@ -1,0 +1,23 @@
+.add-item-panel {
+  margin: 1rem 0;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+.add-item-panel input {
+  width: auto;
+  flex-grow: 1;
+  margin-right: 3px;
+  color: var(--additionalTextColor);
+}
+
+@media (max-width: 420px) {
+  .add-item-panel {
+    flex-wrap: wrap;
+  }
+  .add-item-panel .btn {
+    flex-basis: 100%;
+    margin-top: 0.5rem;
+  }
+
+}

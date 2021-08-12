@@ -18,7 +18,7 @@ const TodoList = ({ todos, onDeleted, onToggleDone, onToggleImportant }) => {
   });
   return (
     <ul className="list-group todo-list">
-     {elements}
+      {elements}
     </ul>
 )};
 

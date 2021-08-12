@@ -16,10 +16,10 @@ class SearchPanel extends Component {
   render() {
     return (
       <input className="form-control search-input"
-             type="text"
-             placeholder="type to search"
-             value={this.state.searchedData}
-             onChange={this.filterItems} 
+            type="text"
+            placeholder="type to search"
+            value={this.state.searchedData}
+            onChange={this.filterItems} 
       />
     );
   }

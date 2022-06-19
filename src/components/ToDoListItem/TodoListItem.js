@@ -50,6 +50,3 @@ class TodoListItem extends Component {
 }
 
 export default TodoListItem;
-
-// проинициализировав state первый раз, его больше менять нельзя. Нельзя!!!
-// он становится доступен только для чтения!
